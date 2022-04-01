@@ -15,6 +15,8 @@ allow rild rild_vendor_data_file:dir create_dir_perms;
 allow rild rild_vendor_data_file:file create_file_perms;
 allow rild vendor_fw_file:file r_file_perms;
 allow rild mnt_vendor_file:dir r_dir_perms;
+allow rild vendor_data_file:dir rw_dir_perms;
+allow rild vendor_data_file:file create_file_perms;
 
 r_dir_file(rild, modem_img_file)
 

@@ -17,7 +17,3 @@ dontaudit priv_app ab_update_gki_prop:file { getattr };
 dontaudit priv_app ab_update_gki_prop:file { map };
 dontaudit priv_app adbd_prop:file { open };
 dontaudit priv_app adbd_prop:file { getattr };
-allow priv_app init:unix_stream_socket connectto;
-allow priv_app property_socket:sock_file write;
-allow priv_app rild:binder call;
-allow priv_app hal_exynos_rild_hwservice:hwservice_manager find;
